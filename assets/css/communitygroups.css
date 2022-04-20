@@ -1,0 +1,47 @@
+a {
+    color: #2d78ae;
+}
+
+#newHerePanel {
+    background-color: #878c8c;
+    background-image: url(images/light-bl.svg), url(images/light-br.svg);
+    background-position: bottom left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 25em, 25em;
+    color: #fff;
+}
+
+#fallPanel {
+    background-color: #75b4fc;
+    background-image: url(images/light-bl.svg), url(images/light-br.svg);
+    background-position: bottom left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 25em, 25em;
+    color: #fff;
+}
+
+#newHereConnectButton:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Narrow */
+
+@media screen and (max-width: 980px) {
+    #newHerePanel {
+        background-size: 15em;
+    }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 736px) {
+    #newHerePanel {
+        background-size: 10em;
+    }
+
+.locationtitle {
+  margin-bottom: -10px;
+
+}
+
+}

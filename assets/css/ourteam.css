@@ -1,0 +1,17 @@
+a {
+    color: #2d78ae;
+}
+
+.card-body {
+    min-height: 78px !important;
+}
+
+.portrait {
+    transition: transform 0.2s;
+}
+
+.portrait:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s;
+    cursor: pointer;
+}

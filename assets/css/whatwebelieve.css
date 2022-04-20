@@ -1,0 +1,10 @@
+.referenceVerses {
+    font-size: 10pt;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 736px) {
+    .referenceVerses {
+        font-size: 8pt !important;
+    }
+}

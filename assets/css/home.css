@@ -1,0 +1,328 @@
+/* Announcements */
+.announcementTile {
+    transition: transform 0.2s;
+}
+
+.announcementTile:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+#mainCarousel {
+    display: none;
+}
+
+/* Banner */
+
+@-moz-keyframes reveal-banner {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes reveal-banner {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes reveal-banner {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes reveal-banner {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#banner {
+    background-attachment: scroll, scroll, scroll, fixed;
+    background-color: rgba(52, 27, 43, 0.5);
+    background-image: url("images/light-bl.svg"), url("images/light-br.svg"),
+        url("images/overlay.png"), url("../../images/banner.jpg");
+    background-position: bottom left, bottom right, top left, top center;
+    background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+    background-size: 25em, 25em, auto, cover;
+    color: #fff;
+    cursor: default;
+    padding: 6em 0;
+    text-align: center;
+}
+
+#banner .inner {
+    -moz-animation: reveal-banner 1s 0.25s ease-in-out;
+    -webkit-animation: reveal-banner 1s 0.25s ease-in-out;
+    -ms-animation: reveal-banner 1s 0.25s ease-in-out;
+    animation: reveal-banner 1s 0.25s ease-in-out;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    background: rgba(52, 27, 43, 0.5);
+    color: #fff;
+    display: inline-block;
+    opacity: 0;
+    padding: 3em;
+    text-align: center;
+}
+
+#banner .inner header {
+    display: inline-block;
+    border-bottom: solid 2px;
+    border-top: solid 2px;
+    margin: 0 0 2em 0;
+    padding: 3px 0 3px 0;
+}
+
+#banner .inner header h2 {
+    border-bottom: solid 2px;
+    border-top: solid 2px;
+    font-size: 2.5em;
+    font-weight: 900;
+    letter-spacing: 0.2em;
+    margin: 0;
+    padding-left: 0.05em;
+    position: relative;
+    text-transform: uppercase;
+}
+
+#banner .inner p {
+    letter-spacing: 0.1em;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+#banner .inner p a {
+    color: inherit;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+#banner .inner footer {
+    margin: 2em 0 0 0;
+}
+
+/* CTA */
+
+#cta {
+    background-attachment: scroll, scroll, scroll, fixed;
+    background-color: #645862;
+    background-image: url("images/light-tl.svg"), url("images/light-tr.svg"),
+        url("images/overlay.png"), url("../../images/banner.jpg");
+    background-position: top left, top right, top left, bottom center;
+    background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+    background-size: 25em, 25em, auto, cover;
+    color: #fff;
+    padding: 5em;
+    text-align: center;
+}
+
+#cta header {
+    margin-bottom: 2em;
+}
+
+/* Get Connected Panel */
+
+#getConnectedPanel {
+    background-color: #878c8c;
+    background-image: url(images/light-bl.svg), url(images/light-br.svg);
+    background-position: bottom left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 25em, 25em;
+    color: #fff;
+}
+
+#getConnectedButton:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Header */
+
+@-moz-keyframes reveal-header {
+    0% {
+        top: -5em;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+@-webkit-keyframes reveal-header {
+    0% {
+        top: -5em;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+@-ms-keyframes reveal-header {
+    0% {
+        top: -5em;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes reveal-header {
+    0% {
+        top: -5em;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+/* Navbar 2 */
+#navbar2 {
+    position: absolute;
+}
+
+#navbar2 .logo {
+    color: #fff !important;
+}
+
+#navbar2 .navbar-collapse .nav-item .nav-link {
+    color: #fff !important;
+}
+
+/* Normal */
+
+@media screen and (max-width: 1280px) {
+    /* Banner */
+
+    #banner {
+        background-attachment: scroll;
+    }
+
+    /* CTA */
+
+    #cta {
+        padding: 4em;
+        background-attachment: scroll;
+    }
+}
+
+/* Narrow */
+
+@media screen and (max-width: 980px) {
+    /* Banner */
+
+    #banner {
+        background-size: 15em, 15em, auto, cover;
+    }
+
+    /* CTA */
+
+    #cta {
+        background-size: 15em, 15em, auto, cover;
+        padding: 3em;
+    }
+
+    #getConnectedPanel {
+        background-size: 15em;
+    }
+}
+
+/* Narrower */
+
+@media screen and (max-width: 840px) {
+    /* Banner */
+
+    #banner {
+        margin: 0;
+    }
+
+    /* CTA */
+
+    #cta {
+        margin: 0;
+    }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 736px) {
+    /* Announcements */
+    #announcementTiles {
+        display: none;
+    }
+
+    #mainCarousel {
+        display: inherit;
+    }
+
+    /* Banner */
+
+    #banner {
+        background-size: 10em, 10em, auto, cover;
+        padding: 6em 0;
+    }
+
+    #banner .inner {
+        background: none;
+        display: block;
+        padding: 0 1.5em;
+    }
+
+    #banner .inner header h2 {
+        font-size: 1.5em;
+    }
+
+    #banner .inner p {
+        text-align: center;
+    }
+
+    #banner .inner br {
+        display: none;
+    }
+
+    /* CTA */
+
+    #cta {
+        background-size: 10em, 10em, auto, cover;
+        padding: 3em 0.5em;
+    }
+
+    #getConnectedPanel {
+        background-size: 10em;
+    }
+}
+
+.livestreamButton {
+
+    background: rgba(77, 214, 64, 0.253);
+
+
+}
+.livestreamButton:hover {
+
+    background: rgba(36, 206, 21, 0.5);
+
+
+}
