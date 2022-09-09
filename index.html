@@ -1,432 +1,671 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <title>H2O Indiana University - H2O Church</title>
+    <link rel="icon" href="images/icons/logo/favicon.ico" />
+    <link rel="stylesheet" href="assets/css/site.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <noscript>
+      <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
 
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<title>
-		H2O Indiana University - H2O Church
-	</title>
-	<link rel="icon" href="images/icons/logo/favicon.ico">
-	<link rel="stylesheet" href="assets/css/site.css" />
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
+    <link rel="stylesheet" href="assets/css/home.css" />
 
-	<link rel="stylesheet" href="assets/css/home.css" />
+    <link href="assets/css/video-js.css" rel="stylesheet" />
+  </head>
 
+  <body class="index is-preload">
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg fixed-top navbar-light bg-white shadow-sm py-0"
+    >
+      <a class="navbar-brand logo ml-2" href="#">H2O CHURCH</a>
+      <button
+        class="sidebarToggleButton btn navbar-toggler"
+        data-toggle="collapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-	<link href="assets/css/video-js.css" rel="stylesheet" />
-</head>
-
-
-
-
-<body class="index is-preload">
-
-	<nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-light bg-white shadow-sm py-0">
-		<a class="navbar-brand logo ml-2" href="#">H2O CHURCH</a>
-		<button class="sidebarToggleButton btn navbar-toggler" data-toggle="collapse" aria-expanded="false"
-			aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-		<div class="navbar-collapse collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav ml-auto mr-2">
-				<li class="nav-item">
-					<a class="nav-link mx-2 active" href="#">HOME</a>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle mx-2 " href="#" id="aboutUsDropdown" role="button"
-						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						ABOUT US
-					</a>
-					<div class="dropdown-menu" aria-labelledby="aboutUsDropdown">
-						<a class="dropdown-item " href="whoweare.html">WHO
-							WE ARE</a>
-						<a class="dropdown-item " href="whatwebelieve.html">WHAT WE BELIEVE</a>
-						<a class="dropdown-item " href="ourteam.html">OUR
-							TEAM</a>
-						<a class="dropdown-item " href="partnerships.html">PARTNERSHIPS</a>
-					</div>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle mx-2 " href="#" id="connectDropdown" role="button"
-						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						CONNECT
-					</a>
-					<div class="dropdown-menu" aria-labelledby="connectDropdown">
-						<a class="dropdown-item " href="https://docs.google.com/forms/d/e/1FAIpQLSf8_3eSdegAOOSfheKQM9OzK8pbr5nRsnEpGEuE9ESnrWCgfg/viewform" target="_blank">GET
-							CONNECTED</a>
-						<a class="dropdown-item " href="communitygroups.html">COMMUNITY GROUPS</a>
-					</div>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle mx-2 " href="#" id="eventsDropdown" role="button"
-						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						EVENTS
-					</a>
-					<div class="dropdown-menu" aria-labelledby="eventsDropdown">
-						<!-- <a class="dropdown-item " href="lt.html">LEADERSHIP
+      <div class="navbar-collapse collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mr-2">
+          <li class="nav-item">
+            <a class="nav-link mx-2 active" href="#">HOME</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle mx-2"
+              href="#"
+              id="aboutUsDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              ABOUT US
+            </a>
+            <div class="dropdown-menu" aria-labelledby="aboutUsDropdown">
+              <a class="dropdown-item" href="whoweare.html">WHO WE ARE</a>
+              <a class="dropdown-item" href="whatwebelieve.html"
+                >WHAT WE BELIEVE</a
+              >
+              <a class="dropdown-item" href="ourteam.html">OUR TEAM</a>
+              <a class="dropdown-item" href="partnerships.html">PARTNERSHIPS</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle mx-2"
+              href="#"
+              id="connectDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              CONNECT
+            </a>
+            <div class="dropdown-menu" aria-labelledby="connectDropdown">
+              <a
+                class="dropdown-item"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSf8_3eSdegAOOSfheKQM9OzK8pbr5nRsnEpGEuE9ESnrWCgfg/viewform"
+                target="_blank"
+                >GET CONNECTED</a
+              >
+              <a class="dropdown-item" href="communitygroups.html"
+                >COMMUNITY GROUPS</a
+              >
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle mx-2"
+              href="#"
+              id="eventsDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              EVENTS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="eventsDropdown">
+              <!-- <a class="dropdown-item " href="lt.html">LEADERSHIP
 							TRAINING</a> -->
-						<a class="dropdown-item " href="deeper.html">DEEPER</a>
-						<a class="dropdown-item " href="communityengagement.html">COMMUNITY ENGAGEMENT</a>
-						<!-- <a class="dropdown-item " href="officehours.html">OFFICE
+              <a class="dropdown-item" href="deeper.html">DEEPER</a>
+              <a class="dropdown-item" href="fallretreat.html">FALL RETREAT</a>
+              <a class="dropdown-item" href="communityengagement.html"
+                >COMMUNITY ENGAGEMENT</a
+              >
+              <!-- <a class="dropdown-item " href="officehours.html">OFFICE
 							HOURS</a> -->
-					</div>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle mx-2 " href="#" id="sundaysDropdown" role="button"
-						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						SUNDAYS
-					</a>
-					<div class="dropdown-menu" aria-labelledby="sundaysDropdown">
-						<a class="dropdown-item " href="whattoexpect.html">WHAT TO
-							EXPECT</a>
-						<a class="dropdown-item " href="https://drive.google.com/drive/u/1/folders/1UxsZqQr-e6zKfObBQGkQMHU2XJjCx7vL" target="_blank">SERMONS</a>
-					</div>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link mx-2 " href="give.html">GIVE</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle mx-2"
+              href="#"
+              id="sundaysDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              SUNDAYS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="sundaysDropdown">
+              <a class="dropdown-item" href="whattoexpect.html"
+                >WHAT TO EXPECT</a
+              >
+              <a
+                class="dropdown-item"
+                href="https://drive.google.com/drive/u/1/folders/1UxsZqQr-e6zKfObBQGkQMHU2XJjCx7vL"
+                target="_blank"
+                >SERMONS</a
+              >
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="give.html">GIVE</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-	<div id="navSidebar" class="sidebar shadow rounded">
-		<a href="javascript:void(0)" class="sidebarCloseButton">&times;</a>
-		<a href="#" class="sidebarLabel">HOME</a>
-		<p class="sidebarLabel">ABOUT US</p>
-		<div class="sidebarChildren">
-			<a href="whoweare.html">WHO WE ARE</a>
-			<a href="whatwebelieve.html">WHAT WE BELIEVE</a>
-			<a href="ourteam.html">OUR TEAM</a>
-			<a href="partnerships.html">PARTNERSHIPS</a>
-		</div>
-		<p class="sidebarLabel">CONNECT</p>
-		<div class="sidebarChildren">
-			<a href="https://docs.google.com/forms/d/e/1FAIpQLSf8_3eSdegAOOSfheKQM9OzK8pbr5nRsnEpGEuE9ESnrWCgfg/viewform" target="_blank">GET CONNECTED</a>
-			<a href="communitygroups.html">COMMUNITY GROUPS</a>
-		</div>
-		<p class="sidebarLabel">EVENTS</p>
-		<div class="sidebarChildren">
-			<!-- <a href="lt.html">LEADERSHIP TRAINING</a> -->
-			<a href="deeper.html">DEEPER</a>
-			<a href="communityengagement.html">COMMUNITY ENGAGEMENT</a>
-			<!-- <a href="officehours.html">OFFICE HOURS</a> -->
+    <div id="navSidebar" class="sidebar shadow rounded">
+      <a href="javascript:void(0)" class="sidebarCloseButton">&times;</a>
+      <a href="#" class="sidebarLabel">HOME</a>
+      <p class="sidebarLabel">ABOUT US</p>
+      <div class="sidebarChildren">
+        <a href="whoweare.html">WHO WE ARE</a>
+        <a href="whatwebelieve.html">WHAT WE BELIEVE</a>
+        <a href="ourteam.html">OUR TEAM</a>
+        <a href="partnerships.html">PARTNERSHIPS</a>
+      </div>
+      <p class="sidebarLabel">CONNECT</p>
+      <div class="sidebarChildren">
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSf8_3eSdegAOOSfheKQM9OzK8pbr5nRsnEpGEuE9ESnrWCgfg/viewform"
+          target="_blank"
+          >GET CONNECTED</a
+        >
+        <a href="communitygroups.html">COMMUNITY GROUPS</a>
+      </div>
+      <p class="sidebarLabel">EVENTS</p>
+      <div class="sidebarChildren">
+        <!-- <a href="lt.html">LEADERSHIP TRAINING</a> -->
+        <a href="deeper.html">DEEPER</a>
+        <a href="fallretreat.html">FALL RETREAT</a>
+        <a href="communityengagement.html">COMMUNITY ENGAGEMENT</a>
+        <!-- <a href="officehours.html">OFFICE HOURS</a> -->
+      </div>
+      <p class="sidebarLabel">SUNDAYS</p>
+      <div class="sidebarChildren">
+        <a href="whattoexpect.html">WHAT TO EXPECT</a>
+        <a
+          href="https://drive.google.com/drive/u/1/folders/1UxsZqQr-e6zKfObBQGkQMHU2XJjCx7vL"
+          target="_blank"
+          >SERMONS</a
+        >
+      </div>
+      <a href="give.html" class="sidebarLabel">GIVE</a>
+    </div>
 
-		</div>
-		<p class="sidebarLabel">SUNDAYS</p>
-		<div class="sidebarChildren">
-			<a href="whattoexpect.html">WHAT TO EXPECT</a>
-			<a href="https://drive.google.com/drive/u/1/folders/1UxsZqQr-e6zKfObBQGkQMHU2XJjCx7vL" target="_blank">SERMONS</a>
-		</div>
-		<a href="give.html" class="sidebarLabel">GIVE</a>
-	</div>
+    <nav id="navbar2" class="navbar navbar-expand-lg navbar-dark py-0 w-100">
+      <a class="navbar-brand logo ml-2" href="#">H2O CHURCH</a>
+      <button
+        class="sidebarToggleButton btn navbar-toggler"
+        data-toggle="collapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
+      <div class="navbar-collapse collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mr-2">
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="#">HOME</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle mx-2"
+              href="#"
+              id="aboutUsDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              ABOUT US
+            </a>
+            <div class="dropdown-menu" aria-labelledby="aboutUsDropdown">
+              <a class="dropdown-item" href="whoweare.html">WHO WE ARE</a>
+              <a class="dropdown-item" href="whatwebelieve.html"
+                >WHAT WE BELIEVE</a
+              >
+              <a class="dropdown-item" href="ourteam.html">OUR TEAM</a>
+              <a class="dropdown-item" href="partnerships.html">PARTNERSHIPS</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle mx-2"
+              href="#"
+              id="connectDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              CONNECT
+            </a>
+            <div class="dropdown-menu" aria-labelledby="connectDropdown">
+              <a
+                class="dropdown-item"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSf8_3eSdegAOOSfheKQM9OzK8pbr5nRsnEpGEuE9ESnrWCgfg/viewform"
+                target="_blank"
+                >GET CONNECTED</a
+              >
+              <a class="dropdown-item" href="communitygroups.html"
+                >COMMUNITY GROUPS</a
+              >
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle mx-2"
+              href="#"
+              id="eventsDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              EVENTS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="eventsDropdown">
+              <!-- <a class="dropdown-item" href="lt.html">LEADERSHIP TRAINING</a> -->
+              <a class="dropdown-item" href="deeper.html">DEEPER</a>
+              <a class="dropdown-item" href="fallretreat.html">FALL RETREAT</a>
+              <a class="dropdown-item" href="communityengagement.html"
+                >COMMUNITY ENGAGEMENT</a
+              >
+              <!-- <a class="dropdown-item" href="officehours.html">OFFICE HOURS</a> -->
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle mx-2"
+              href="#"
+              id="sundaysDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              SUNDAYS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="eventsDropdown">
+              <a class="dropdown-item" href="whattoexpect.html"
+                >WHAT TO EXPECT</a
+              >
+              <a
+                class="dropdown-item livestreamNav"
+                href="livestream.html"
+                hidden
+                >LIVESTREAM</a
+              >
+              <a
+                class="dropdown-item"
+                href="https://drive.google.com/drive/u/1/folders/1UxsZqQr-e6zKfObBQGkQMHU2XJjCx7vL"
+                target="_blank"
+                >SERMONS</a
+              >
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="give.html">GIVE</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-	<nav id="navbar2" class="navbar navbar-expand-lg navbar-dark py-0 w-100">
-		<a class="navbar-brand logo ml-2" href="#">H2O CHURCH</a>
-		<button class="sidebarToggleButton btn navbar-toggler" data-toggle="collapse" aria-expanded="false"
-			aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
+    <div id="banner">
+      <div class="inner">
+        <header>
+          <h2><strong>H2O Church</strong></h2>
+        </header>
+        <p>
+          at <strong>Indiana University,</strong>
+          <br />
+          a church for the campus
+          <br />
+        </p>
 
-		<div class="navbar-collapse collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav ml-auto mr-2">
-				<li class="nav-item">
-					<a class="nav-link mx-2" href="#">HOME</a>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle mx-2" href="#" id="aboutUsDropdown" role="button"
-						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						ABOUT US
-					</a>
-					<div class="dropdown-menu" aria-labelledby="aboutUsDropdown">
-						<a class="dropdown-item" href="whoweare.html">WHO WE
-							ARE</a>
-						<a class="dropdown-item" href="whatwebelieve.html">WHAT
-							WE BELIEVE</a>
-						<a class="dropdown-item" href="ourteam.html">OUR TEAM</a>
-						<a class="dropdown-item" href="partnerships.html">PARTNERSHIPS</a>
-					</div>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle mx-2" href="#" id="connectDropdown" role="button"
-						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						CONNECT
-					</a>
-					<div class="dropdown-menu" aria-labelledby="connectDropdown">
-						<a class="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLSf8_3eSdegAOOSfheKQM9OzK8pbr5nRsnEpGEuE9ESnrWCgfg/viewform" target="_blank">GET
-							CONNECTED</a>
-						<a class="dropdown-item" href="communitygroups.html">COMMUNITY GROUPS</a>
-					</div>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle mx-2" href="#" id="eventsDropdown" role="button"
-						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						EVENTS
-					</a>
-					<div class="dropdown-menu" aria-labelledby="eventsDropdown">
-						<!-- <a class="dropdown-item" href="lt.html">LEADERSHIP TRAINING</a> -->
-						<a class="dropdown-item" href="deeper.html">DEEPER</a>
-						<a class="dropdown-item" href="communityengagement.html">COMMUNITY ENGAGEMENT</a>
-						<!-- <a class="dropdown-item" href="officehours.html">OFFICE HOURS</a> -->
-					</div>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle mx-2" href="#" id="sundaysDropdown" role="button"
-						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						SUNDAYS
-					</a>
-					<div class="dropdown-menu" aria-labelledby="eventsDropdown">
-						<a class="dropdown-item" href="whattoexpect.html">WHAT TO EXPECT</a>
-						<a class="dropdown-item livestreamNav" href="livestream.html" hidden>LIVESTREAM</a>
-						<a class="dropdown-item" href="https://drive.google.com/drive/u/1/folders/1UxsZqQr-e6zKfObBQGkQMHU2XJjCx7vL" target="_blank">SERMONS</a>
-					</div>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link mx-2" href="give.html">GIVE</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
+        <footer>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSf8_3eSdegAOOSfheKQM9OzK8pbr5nRsnEpGEuE9ESnrWCgfg/viewform "
+            target="_blank"
+            class="button fit scrolly mb-3"
+            >Connect with Us</a
+          >
+        </footer>
+      </div>
+    </div>
 
-	<div id="banner">
-		<div class="inner">
-			<header>
-				<h2><strong>H2O Church</strong></h2>
-			</header>
-			<p>at <strong>Indiana University,</strong>
-				<br />
-				a church for the campus
-				<br />
-			<footer>
-				<a href="https://docs.google.com/forms/d/e/1FAIpQLSf8_3eSdegAOOSfheKQM9OzK8pbr5nRsnEpGEuE9ESnrWCgfg/viewform " target="_blank" class="button fit scrolly mb-3">Connect with Us</a>
-			</footer>
+    <div id="main">
+      <div class="container">
+        <div class="mx-auto panel">
+          <div class="row text-center mb-5">
+            <div class="col-12 mt-5">
+              <h2>
+                EVERYTHING WE DO IS ROOTED IN OUR DESIRE TO GET TO KNOW GOD
+                TOGETHER
+                <br />
+                <strong>AS A COMMUNITY</strong>
+              </h2>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col-12 my-2"></div>
+          </div>
+          <div class="row mb-5">
+            <div class="col-12 col-lg-6 px-0 px-lg-4 py-4">
+              <img
+                class="img w-100 rounded shadow lozad fadeIn3"
+                data-src="images/thumbs/hiking.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-12 col-lg-6 px-0 px-lg-4 py-4">
+              <img
+                class="img w-100 rounded shadow lozad fadeIn2"
+                data-src="images/thumbs/bryan_slice.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-12 col-lg-6 px-0 px-lg-4 py-4">
+              <img
+                class="img w-100 rounded shadow lozad fadeIn3"
+                data-src="images/thumbs/coffeetent.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-12 col-lg-6 px-0 px-lg-4 py-4">
+              <img
+                class="img w-100 rounded shadow lozad fadeIn1"
+                data-src="images/thumbs/group.jpg"
+                alt=""
+              />
+            </div>
+          </div>
 
-		</div>
-	</div>
+          <div class="row p-2 p-sm-5 text-center mb-5">
+            <div class="col-12">
+              <span class="icon solid featured fa-users"></span>
+              <h3 class="mb-4"><strong>THE HEARTBEAT OF H2O</strong></h3>
+              <p>
+                While we love to worship and learn together on Sundays, we know
+                that people grow lasting connections in smaller groups. Our H2O
+                Community Groups create space to grow in deeper spiritual
+                community with one another and are truly the heart-beat of our
+                church. These community groups are a place to feel at home, ask
+                questions, and grow lasting friendships. We have seen hundreds
+                of new students encounter God and be transformed by Him. We
+                believe He wants to do the same for you!
+              </p>
+              <a href="communitygroups.html" class="button mt-4"
+                >Find A Community Group</a
+              >
+            </div>
+          </div>
 
+          <div class="row mb-5">
+            <div class="col-12 my-5"></div>
+          </div>
 
-	<div id="main">
-		<div class="container">
-			<div class="mx-auto panel">
-
-
-				<div class="row text-center mb-5">
-					<div class="col-12 mt-5">
-						<h2>EVERYTHING WE DO IS ROOTED IN OUR DESIRE TO GET TO KNOW GOD TOGETHER
-							<br>
-							<strong>AS A COMMUNITY</strong>
-						</h2>
-					</div>
+          <div
+            id="mainCarousel"
+            class="row mx-auto justify-content-center mb-5"
+          >
+            <div class="col-12 col-md-10 p-0 p-md-2">
+              <div
+                id="homeCarousel"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <ol class="carousel-indicators">
+                  <li
+                    data-target="#homeCarousel"
+                    data-slide-to="0"
+                    class="active"
+                  ></li>
+                  <li data-target="#homeCarousel" data-slide-to="1"></li>
+                  <li data-target="#homeCarousel" data-slide-to="2"></li>
+                  <li data-target="#homeCarousel" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner rounded">
+                  <div class="carousel-item active">
+                    <img
+                      class="d-block w-100 lozad"
+                      data-src="images/thumbs/InvitingYou.png"
+                      alt=""
+                    />
+                    <a
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSf8_3eSdegAOOSfheKQM9OzK8pbr5nRsnEpGEuE9ESnrWCgfg/viewform"
+                      target="_blank"
+                      class="stretched-link"
+                    ></a>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      class="d-block w-100 lozad"
+                      data-src="images/thumbs/sundayworship.png"
+                      alt=""
+                    />
+                    <a href="whattoexpect.html" class="stretched-link"></a>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      class="d-block w-100 lozad"
+                      data-src="images/thumbs/communitygroups.jpg"
+                      alt=""
+                    />
+                    <a href="communitygroups.html" class="stretched-link"></a>
+                  </div>
+				  <div class="carousel-item">
+                    <img
+                      class="d-block w-100 lozad"
+                      data-src="images/fallretreat.png"
+                      alt=""
+                    />
+                    <a href="fallretreat.html" class="stretched-link"></a>
+                  </div> 
+                </div>
+                <a
+                  class="carousel-control-prev"
+                  href="#homeCarousel"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a
+                  class="carousel-control-next"
+                  href="#homeCarousel"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div id="announcementTiles" class="row justify-content-center mb-5">
+            <div class="col-12 col-sm-6 col-lg-6 mb-4">
+              <div class="card shadow announcementTile">
+                <img
+                  data-src="images/thumbs/InvitingYou.png"
+                  class="card-img lozad fadeIn3"
+                  alt=""
+                />
+                <div class="card-img-overlay">
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSf8_3eSdegAOOSfheKQM9OzK8pbr5nRsnEpGEuE9ESnrWCgfg/viewform"
+                    target="_blank"
+                    class="stretched-link"
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-6 mb-4">
+              <div class="card shadow announcementTile">
+                <img
+                  data-src="images/thumbs/sundayworship.png"
+                  class="card-img lozad fadeIn2"
+                  alt=""
+                />
+                <div class="card-img-overlay">
+                  <a href="whattoexpect.html" class="stretched-link"></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-6 mb-4">
+              <div class="card shadow announcementTile">
+                <img
+                  data-src="images/thumbs/communitygroups.jpg"
+                  class="card-img lozad fadeIn1"
+                  alt=""
+                />
+                <div class="card-img-overlay">
+                  <a href="communitygroups.html" class="stretched-link"></a>
+                </div>
+              </div>
+            </div>
+			<div class="col-12 col-sm-6 col-lg-6 mb-4">
+				<div class="card shadow announcementTile">
+				  <img
+					data-src="images/fallretreat.png"
+					class="card-img lozad fadeIn2"
+					alt=""
+				  />
+				  <div class="card-img-overlay">
+					<a href="fallretreat.html" class="stretched-link"></a>
+				  </div>
 				</div>
-				<div class="row mb-5">
-					<div class="col-12 my-2"></div>
-				</div>
-				<div class="row mb-5">
-					<div class="col-12 col-lg-6 px-0 px-lg-4 py-4">
-						<img class="img w-100 rounded shadow lozad fadeIn3" data-src="images/thumbs/hiking.jpg"
-							alt="" />
-					</div>
-					<div class="col-12 col-lg-6 px-0 px-lg-4 py-4">
-						<img class="img w-100 rounded shadow lozad fadeIn2" data-src="images/thumbs/bryan_slice.jpg"
-							alt="" />
-					</div>
-					<div class="col-12 col-lg-6 px-0 px-lg-4 py-4">
-						<img class="img w-100 rounded shadow lozad fadeIn3" data-src="images/thumbs/coffeetent.jpg"
-							alt="" />
-					</div>
-					<div class="col-12 col-lg-6 px-0 px-lg-4 py-4">
-						<img class="img w-100 rounded shadow lozad fadeIn1" data-src="images/thumbs/group.jpg" alt="" />
-					</div>
-				</div>
+			  </div>
+          </div>
 
-				<div class="row p-2 p-sm-5 text-center mb-5">
-					<div class="col-12">
-						<span class="icon solid featured fa-users"></span>
-						<h3 class="mb-4"><strong>THE HEARTBEAT OF H2O</strong></h3>
-						<p>While we love to worship and learn together on Sundays, we know that people grow lasting
-							connections in smaller groups.
+          <div class="row mb-5">
+            <div class="col-12 my-5"></div>
+          </div>
+          <div
+            id="getConnectedPanel"
+            class="row p-2 p-sm-5 text-center rounded shadow mb-5"
+          >
+            <div class="col-12">
+              <h2 class="mb-5">
+                <strong
+                  >WHETHER YOU ARE JOINING US IN PERSON OR ONLINE, OUR HOPE IS
+                  THAT YOU'LL FEEL RIGHT AT HOME</strong
+                >
+              </h2>
+              <p class="mb-5">
+                From meeting new friends, finding your classes, not to mention
+                the challenges that come with COVID-19, coming to college can
+                definitely be an overwhelming experience. Whether you are
+                feeling overwhelmed or are just excited to get started, we
+                understand where you are at and want to walk alongside you in
+                this journey.
+              </p>
+              <a
+                id="getConnectedButton"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSf8_3eSdegAOOSfheKQM9OzK8pbr5nRsnEpGEuE9ESnrWCgfg/viewform"
+                target="_blank"
+                class="button"
+                >Get Connected</a
+              >
+            </div>
+          </div>
 
-							Our H2O Community Groups create space to grow in deeper spiritual community with one
-							another and are truly the heart-beat of our church.
-							These community groups are a place to feel at home, ask questions, and grow lasting
-							friendships.
-							We have seen hundreds of new students encounter God and be transformed by Him. We
-							believe He wants to do the same for you!</p>
-						<a href="communitygroups.html" class="button mt-4">Find A Community Group</a>
-					</div>
-				</div>
+          <div class="row mb-5">
+            <div class="col-12 my-5"></div>
+          </div>
+          <div class="row text-center mb-5">
+            <div class="col-12">
+              <h4>
+                We are a community of college students who are seeking to find
+                and follow Jesus together. Whether you choose to meet with us in
+                person or join us online, we look forward to meeting you.
+              </h4>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col-12 my-5"></div>
+          </div>
+          <div class="row">
+            <div class="col-12 my-5"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="cta">
+      <h2>
+        "Anyone who drinks this water will soon become thirsty again. But those
+        who drink the water I give will never be thirsty again. It becomes a
+        fresh bubbling spring within them, giving them eternal life"
+      </h2>
+      <p>JOHN 4:13-14</p>
+    </div>
 
-				<div class="row mb-5">
-					<div class="col-12 my-5"></div>
-				</div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/lozad.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
 
+    <script src="assets/js/home.js"></script>
 
-
-
-				<div id="mainCarousel" class="row mx-auto justify-content-center mb-5">
-					<div class="col-12 col-md-10 p-0 p-md-2">
-						<div id="homeCarousel" class="carousel slide" data-ride="carousel">
-							<ol class="carousel-indicators">
-								<li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
-								<li data-target="#homeCarousel" data-slide-to="1"></li>
-								<li data-target="#homeCarousel" data-slide-to="2"></li>
-								<li data-target="#homeCarousel" data-slide-to="3"></li>
-
-
-							</ol>
-							<div class="carousel-inner rounded">
-								<div class="carousel-item active">
-									<img class="d-block w-100 lozad" data-src="images/thumbs/InvitingYou.png" alt="">
-									<a href="https://docs.google.com/forms/d/e/1FAIpQLSf8_3eSdegAOOSfheKQM9OzK8pbr5nRsnEpGEuE9ESnrWCgfg/viewform" target="_blank" class="stretched-link"></a>
-								</div>
-								<div class="carousel-item">
-									<img class="d-block w-100 lozad" data-src="images/thumbs/sundayworship.png" alt="">
-									<a href="whattoexpect.html" class="stretched-link"></a>
-								</div>
-								<div class="carousel-item">
-									<img class="d-block w-100 lozad" data-src="images/thumbs/communitygroups.jpg"
-										alt="">
-									<a href="communitygroups.html" class="stretched-link"></a>
-								</div>
-							</div>
-							<a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
-								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-								<span class="sr-only">Previous</span>
-							</a>
-							<a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
-								<span class="carousel-control-next-icon" aria-hidden="true"></span>
-								<span class="sr-only">Next</span>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div id="announcementTiles" class="row justify-content-center mb-5">
-
-					<div class="col-12 col-sm-6 col-lg-6 mb-4">
-						<div class="card shadow announcementTile">
-							<img data-src="images/thumbs/InvitingYou.png" class="card-img lozad fadeIn3" alt="">
-							<div class="card-img-overlay">
-								<a href="https://docs.google.com/forms/d/e/1FAIpQLSf8_3eSdegAOOSfheKQM9OzK8pbr5nRsnEpGEuE9ESnrWCgfg/viewform" target="_blank" class="stretched-link"></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-sm-6 col-lg-6 mb-4">
-						<div class="card shadow announcementTile">
-							<img data-src="images/thumbs/sundayworship.png" class="card-img lozad fadeIn2" alt="">
-							<div class="card-img-overlay">
-								<a href="whattoexpect.html" class="stretched-link"></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-sm-6 col-lg-6 mb-4">
-						<div class="card shadow announcementTile">
-							<img data-src="images/thumbs/communitygroups.jpg" class="card-img lozad fadeIn1" alt="">
-							<div class="card-img-overlay">
-								<a href="communitygroups.html" class="stretched-link"></a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="row mb-5">
-					<div class="col-12 my-5"></div>
-				</div>
-				<div id="getConnectedPanel" class="row p-2 p-sm-5 text-center rounded shadow mb-5">
-					<div class="col-12">
-						<h2 class="mb-5"><strong>WHETHER YOU ARE JOINING US IN PERSON OR ONLINE, OUR HOPE IS THAT
-								YOU'LL FEEL RIGHT AT HOME</strong></h2>
-						<p class="mb-5">
-							From meeting new friends, finding your classes, not to mention the challenges that come with
-							COVID-19, coming to college can definitely be an overwhelming experience. Whether you are
-							feeling overwhelmed or are just excited to get started, we understand where you are at and
-							want to walk alongside you in this journey.
-						</p>
-						<a id="getConnectedButton" href="https://docs.google.com/forms/d/e/1FAIpQLSf8_3eSdegAOOSfheKQM9OzK8pbr5nRsnEpGEuE9ESnrWCgfg/viewform" target="_blank" class="button">Get Connected</a>
-					</div>
-				</div>
-
-				<div class="row mb-5">
-					<div class="col-12 my-5"></div>
-				</div>
-				<div class="row text-center mb-5">
-					<div class="col-12">
-						<h4>We are a community of college students who are seeking to find and follow Jesus together.
-							Whether you choose to meet with us in person or join us online, we look forward to meeting
-							you.</h4>
-					</div>
-				</div>
-				<div class="row mb-5">
-					<div class="col-12 my-5"></div>
-				</div>
-				<div class="row">
-					<div class="col-12 my-5"></div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="cta">
-		<h2>"Anyone who drinks this water will soon become thirsty again.
-			But those who drink the water I give will never be thirsty again. It becomes a fresh bubbling spring
-			within them, giving them eternal life"</h2>
-		<p>JOHN 4:13-14</p>
-	</div>
-
-
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.dropotron.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/navbar.js"></script>
-	<script src="assets/js/lozad.min.js"></script>
-	<script type="text/javascript"
-		src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-		crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-		crossorigin="anonymous"></script>
-
-	<script src="assets/js/home.js"></script>
-
-	<script src="assets/js/common.js"></script>
-</body>
-
+    <script src="assets/js/common.js"></script>
+  </body>
 </html>
 
-
 <footer id="footer">
-	<ul class="icons">
-		<li>
-			<a target="_blank" href="https://www.instagram.com/h2ochurchiu/" class="icon brands circle fa-instagram">
-				<span class="label">Instagram</span>
-			</a>
-		</li>
-		<li>
-			<a target="_blank" href="https://www.facebook.com/h2ochurchiu/" class="icon brands circle fa-facebook-f">
-				<span class="label">Facebook</span>
-			</a>
-		</li>
-		<li>
-			<a target="_blank" href="https://twitter.com/h2ochurchiu" class="icon brands circle fa-twitter">
-				<span class="label">Twitter</span>
-			</a>
-		</li>
-	</ul>
-	<ul class="copyright">
-		<li>For more information, contact Pastor Kevin Cody<br />
-			<a href="mailto:Kevin.Cody@h2oindiana.org">Kevin.Cody@h2oindiana.org</a><br />
-			<a href="tel:+18129550451"> 1(812) 955-0451</a>
-		</li>
-	</ul>
+  <ul class="icons">
+    <li>
+      <a
+        target="_blank"
+        href="https://www.instagram.com/h2ochurchiu/"
+        class="icon brands circle fa-instagram"
+      >
+        <span class="label">Instagram</span>
+      </a>
+    </li>
+    <li>
+      <a
+        target="_blank"
+        href="https://www.facebook.com/h2ochurchiu/"
+        class="icon brands circle fa-facebook-f"
+      >
+        <span class="label">Facebook</span>
+      </a>
+    </li>
+    <li>
+      <a
+        target="_blank"
+        href="https://twitter.com/h2ochurchiu"
+        class="icon brands circle fa-twitter"
+      >
+        <span class="label">Twitter</span>
+      </a>
+    </li>
+  </ul>
+  <ul class="copyright">
+    <li>
+      For more information, contact Pastor Kevin Cody<br />
+      <a href="mailto:Kevin.Cody@h2oindiana.org">Kevin.Cody@h2oindiana.org</a
+      ><br />
+      <a href="tel:+18129550451"> 1(812) 955-0451</a>
+    </li>
+  </ul>
 </footer>
